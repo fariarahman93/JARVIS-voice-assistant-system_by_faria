@@ -1,35 +1,68 @@
-JARVIS - Voice Assistant System
+JARVIS – Voice Assistant System
 
-JARVIS is a Python-based voice assistant designed to interact with users through speech recognition and perform a variety of automated tasks using voice commands.
-It can open applications, search the web, speak responses, and act as a hands-free personal assistant.
+A smart Python-based voice assistant designed to interact naturally using voice commands.
+JARVIS listens, speaks, automates tasks, and acts as a hands-free personal AI companion — inspired by Tony Stark’s JARVIS.
 
-🚀 Features
-Greet the user according to the time of day (morning, afternoon, evening)
+✨ Features
+🗣️ Intelligent Voice Interaction
 
-Recognize voice commands using Google Speech Recognition
+Greets the user based on the time of day
 
-Speak responses using pyttsx3
+Converts speech to text using Google Speech Recognition
 
-Time & Date announcements
+Converts text to natural-sounding speech with pyttsx3
 
-Wikipedia search with spoken summary
+⚙️ Productivity Tools
 
-Open websites like Google, Facebook, YouTube
+Announces the current time
 
-Play random music from a specified folder
+Answers questions
 
-Open system applications: Calculator, Notepad, CMD
+Provides Wikipedia summaries
 
-Open Calendar (Google Calendar via browser)
+Tells jokes and responds to small talk
 
-Tell jokes and respond to basic small talk
+🌐 Web Automation
 
-Exit gracefully with a voice command
+Opens popular websites like:
 
-💻 Requirements
+Google
+
+YouTube
+
+Facebook
+
+GitHub
+
+💻 System Controls
+
+Opens system applications:
+
+Calculator
+
+Notepad
+
+Command Prompt (CMD)
+
+Opens Google Calendar
+
+Plays random music from a chosen folder
+
+🛑 Easy Exit
+
+Gracefully shuts down upon voice command
+
+📦 Requirements
+
+Ensure you have:
+
 Python 3.11 or higher
 
-How to run?
+Working microphone
+
+Internet connection (for Google Speech Recognition)
+
+🚀 How to Run
 1. Create a virtual environment:
 
 ```base
@@ -54,10 +87,12 @@ pip install -r requirements.txt
 python jarvis.py
 
 ```
-## Author
-**Faria Rahman**
-Inspired by Tony stark's JARVIS
+👩‍💻 Author
 
-## License
-This project is open source and free to use for learning purposes.
+Faria Rahman
+Inspired by the legendary JARVIS from Iron Man.
+
+📄 License
+
+This project is open-source and free to use for educational or personal learning purposes.
 
