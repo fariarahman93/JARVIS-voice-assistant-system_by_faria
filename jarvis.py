@@ -7,6 +7,7 @@ import wikipedia
 import webbrowser
 import random
 import subprocess
+import google.generativeai as genai
 
 # logging configuration
 LOG_DIR = "logs"
@@ -63,6 +64,24 @@ def takeCommand():
         print("Say that again please")
         return "None"
     return query
+def gemini_model_response(user_input):
+    try:
+        GEMINI_API_KEY = "AIzaSyCYVLZ5mmo7yQ7fv4-yZusnbYay119eaxM"
+        genai.configure(api_key=GEMINI_API_KEY)
+
+        model = genai.GenerativeModel("gemini-2.5-flash")
+
+        prompt = f"Answer the following question shortly and clearly:\n{user_input}"
+
+        response = model.generate_content(prompt)
+
+        if response and response.text:
+            return response.text.strip()
+        else:
+            return "Sorry, I couldn't generate a response."
+
+    except Exception as e:
+        return f"Error: {str(e)}"
 
 def greeting():
     hour = int(datetime.datetime.now().hour)
@@ -161,5 +180,6 @@ while True:
 
     
     else:
-        speak("I am sorry, I can't help you with that")
-        logging.info("User ased for an unsupported command")
+        response = gemini_model_response(query)
+        speak(response)
+        logging.info("User asked for other questions")

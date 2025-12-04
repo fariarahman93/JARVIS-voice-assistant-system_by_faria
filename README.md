@@ -12,6 +12,10 @@ Converts speech to text using Google Speech Recognition
 
 Converts text to natural-sounding speech with pyttsx3
 
+🧠 AI-Powered Conversations
+
+Integrated Google Gemini AI model for smarter, more natural, and context-aware conversational responses
+
 ⚙️ Productivity Tools
 
 Announces the current time
@@ -78,7 +82,8 @@ conda activate jarvis
 
 3. Install required packages:
 ```base
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
+
 ```
 
 4. Run the JARVIS script:
